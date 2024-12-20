@@ -1,0 +1,19 @@
+<div class="container">
+    <!-- Top Navigation -->
+    
+        <h1> Available Exams</h1>
+        <p>Please select any one of them.</p>
+    
+        <div>
+          <label for="topicSelect">Select Topic:</label>
+          <select id="topicSelect" [(ngModel)]="selectedTopic">
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <!-- Add more topics as needed -->
+          </select>
+          <button (click)="navigateToTopic()">Go</button>
+        </div>
+
+</div>
+
